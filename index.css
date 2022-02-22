@@ -21,7 +21,7 @@ body {
 }
 
 .box {
-    width: 1000px;
+    width: 1440px;
     height: fit-content;
     display: grid;
     grid-template-areas: 'one one two three' 'four five five three';
@@ -49,8 +49,8 @@ body {
 }
 
 .box>div .head .pic {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
 }
 
@@ -67,21 +67,21 @@ body {
 }
 
 .box>div .head .info h3 {
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .box>div .head .info p {
     color: hsl(0, 0%, 81%);
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .box>div>p {
-    font-size: 12px;
+    font-size: 15px;
     color: hsl(0, 0%, 81%);
 }
 
 .box>div>h2 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -149,6 +149,22 @@ p {
         right: 50px;
         width: 80px;
         height: 80px;
+    }
+    .box>div .head .pic {
+        width: 60px;
+        height: 60px;
+    }
+    .box>div .head .info h3 {
+        font-size: 15px;
+    }
+    .box>div .head .info p {
+        font-size: 12px;
+    }
+    .box>div>p {
+        font-size: 12px;
+    }
+    .box>div>h2 {
+        font-size: 18px;
     }
 }
 
