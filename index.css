@@ -88,6 +88,21 @@ body {
 .box .one {
     grid-area: one;
     background-color: hsl(263, 55%, 52%);
+    position: relative;
+    z-index: 2;
+}
+
+.box .one:after {
+    content: '';
+    position: absolute;
+    right: 50px;
+    top: 0;
+    background-image: url('./images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
 }
 
 .box .two {
@@ -130,6 +145,11 @@ p {
         padding: 20px;
         gap: 10px;
     }
+    .box .one:after {
+        right: 50px;
+        width: 80px;
+        height: 80px;
+    }
 }
 
 @media (max-width:768px) {
@@ -151,5 +171,10 @@ p {
     }
     .box>div p {
         font-size: 15px;
+    }
+    .box .one:after {
+        right: 40px;
+        width: 70px;
+        height: 70px;
     }
 }
